@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Home Page with Search Bar, Dark Mode Toggle, Cards, and To-Do List
+
+Welcome to the Next.js Home Page template, featuring a top bar with a search bar
+and dark mode toggle, a page full of card components, and a to-do list at the
+bottom. This template is built using Next.js 13 and Tailwind CSS, with dark mode
+support provided by next-themes.
+
+## Features
+
+- **Search Bar:** The top bar of the page contains a search bar that enables
+  users to search for content.
+
+- **Dark Mode Toggle:** Users can easily switch between light and dark modes
+  using the dark mode toggle button, powered by the next-themes library.
+
+- **Cards:** The main content section is populated with dynamic card components,
+  each displaying customizable content such as images, text, or links.
+
+- **To-Do List:** The bottom section of the page includes a to-do list, allowing
+  users to manage tasks by adding, removing, and marking tasks as completed.
 
 ## Getting Started
 
-First, run the development server:
+To use this template in your Next.js project, follow these steps:
+
+1. Clone this repository to your local machine.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/Neverm1ndEZ/genci-homepage.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the necessary dependencies using Yarn or npm.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+yarn install
+# or
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Start the development server.
 
-## Learn More
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open your browser and navigate to `http://localhost:3000` to see the template
+   in action.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Search Bar
 
-## Deploy on Vercel
+The search bar component allows users to enter their search queries and retrieve
+relevant information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Dark Mode Toggle
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The dark mode toggle button, powered by next-themes, lets users switch between
+light and dark modes for a comfortable viewing experience.
+
+### Cards
+
+The main content section is populated with dynamic card components, customizable
+to display various types of content.
+
+### To-Do List
+
+The to-do list provides a simple task management tool. Users can add, remove,
+and mark tasks as completed.
+
+## Customization
+
+- Modify the appearance and behavior of components by editing their respective
+  files in the project.
+- Adjust the styling of the components using Tailwind CSS classes.

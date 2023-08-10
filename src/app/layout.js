@@ -2,6 +2,8 @@ import "./globals.css";
 import Provider from "./Provider";
 import { Inter } from "next/font/google";
 import Topbar from "@/components/Topbar";
+import LeftNavbar from "@/components/LeftNavbar";
+import RightInfo from "@/components/RightInfo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +17,18 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={inter.className}>
 				<Provider>
-					<Topbar />
-					{children}
+					<div className="flex h-screen ">
+						<LeftNavbar />
+						<div className="flex-1 flex flex-col overflow-hidden">
+							<Topbar />
+							<main className="flex-1 overflow-x-hidden overflow-y-auto p-4">
+								<div className="flex flex-row">
+									{children}
+									{/* <RightInfo /> */}
+								</div>
+							</main>
+						</div>
+					</div>
 				</Provider>
 			</body>
 		</html>
